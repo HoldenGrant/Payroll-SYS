@@ -1,0 +1,99 @@
+/* custom inclusion of right, left and below tabs */
+.nav.payroll-emp-name {
+    display: block;
+    width: 100%;
+    float: left;
+    /*margin-right: 15px;*/
+    /*position: fixed;*/
+    padding: 20px 0;
+}
+.tab-content {
+    display: inline-block;
+    background: #0275d8;
+    border-radius: 5px;
+    padding: 15px;
+}
+.emp-vals tr td input[type="text"] {
+    width: 130px;
+    text-align: right;
+}
+
+.emp-name-list {
+        left: 15%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+}
+.emp-detail-overview {
+    position: absolute;
+    right: 0;
+        left: 15%;
+}
+.emp-payroll-view {
+    display: flex;
+    position: relative;
+}
+.emp-holder {
+    overflow: hidden;
+    word-break: break-word;
+    position: fixed;
+        width: 15%;
+}
+.tab-pane{
+  background: #fff;
+}
+/*.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+
+}
+
+
+*/

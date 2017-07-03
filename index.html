@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- <link rel="icon" href="../../favicon.ico"> -->
+        <title>Payroll - Staging Site</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/starter-template.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-3.1.1.slim.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/payroll.js"></script>
+    </head>
+
+  <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Payroll</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <section id="emps">
+        <div class="container">
+          <h3>Company Payroll</h3>
+          <div class="row emps-inner-container">
+            <div class="col-sm-12 emp-payroll-view float-sm-left">
+              
+                    
+              <!-- tabs left -->
+              <div class="emp-name-list">
+                <div class="emp-holder">
+                  <ul class="nav payroll-emp-name nav-pills" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Rogelio Dayanan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Felimon Avancena</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#references" role="tab" data-toggle="tab">Joel Lucero</a>
+                    </li>
+                  </ul>
+                </div> 
+                
+              </div>
+              
+
+              <!-- Tab panes -->
+              <div class="tab-content tab-content emp-detail-overview float-sm-left">
+                <div role="tabpanel" class="tab-pane fade show in active" id="profile">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#payroll" role="tab" data-toggle="tab">Payroll</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#emp-details" role="tab" data-toggle="tab">Detail View</a>
+                      </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade in active" id="payroll">...</div>
+                      <div role="tabpanel" class="tab-pane fade" id="emp-details">bbb</div>
+                    </div>
+                  <!-- <div class="row"> -->
+                      <!-- <div class="col-sm-12"> -->
+                        <div class="card">
+                          <!-- <div class="card-header">
+                            John Doe
+                          </div> -->
+                          <div class="card-block emp-py-rl">
+                            <div class="inner-details col-sm-12 float-left">
+                              <div class="emp-details">
+                                  <strong>Employee details</strong>
+                                      <table class="table emp-vals">
+                                        <tbody>
+                                            <tr>
+                                              <td>Name</td>
+                                              <td><input type="text" value="Rogelio Dayanan" disabled class="form-control float-sm-right"></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td>Level</td>
+                                              <td><input type="text" value="A" disabled class="form-control float-sm-right"></td>
+                                            </tr>
+                                        </tbody>
+                                      </table>
+                              </div>
+                              <div class="rates">
+                                  <strong>Rates</strong>
+                                  <table class="table emp-vals">
+                                      <tbody>
+                                          <tr>
+                                            <td>Daily</td>
+                                            <td><input type="text" value="371" data-drt="d-rt" data-rate="daily-rate" disabled class="form-control float-sm-right"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Hourly</td>
+                                            <td><input type="text" value="" data-hrt="h-rt" data-rate="hourly-rate" disabled class="form-control float-sm-right"></td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                              <div class="emp-hrs">
+                                  <strong>Working Hours</strong>
+                                  <table class="table emp-vals">
+                                      <tbody>
+                                        <tr>
+                                          <td>Total Reg. Hrs</td>
+                                          <td><input type="text" value="104" data-working-hours="work-hrs" data-hour="working-total-hours" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Reg OT Hrs</td>
+                                          <td><input type="text" value="" data-working-hours="work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Special Holiday/Day off Hrs </td>
+                                          <td><input type="text" value="8" data-working-hours="work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Special H/Day-Off OT Hrs </td>
+                                          <td><input type="text" value="" data-working-hours="work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>   Special H/Day-Off Pay/Hr (on Reg. Holiday) </td>
+                                          <td><input type="text" value="" data-working-hours="work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>   Special H/Day-Off OTPay/Hr (on Reg. Holiday) </td>
+                                          <td><input type="text" value="" data-working-hours="work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Hol. </td>
+                                          <td><input type="text" value="" data-working-hours="work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  H/ OT Hrs </td>
+                                          <td><input type="text" value="" data-working-hours="work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Night Differential </td>
+                                          <td><input type="text" value="" data-working-hours="work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-right">  Overall Total hours </td>
+                                          <td><input type="text" value="" data-working-hours="total-work-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <div class="emp-allwnc">
+                                  <strong>Allowance</strong>
+                                  <table class="table emp-vals">
+                                      <tbody>
+                                        <tr>
+                                          <td>Allowance (Reg Hrs.)</td>
+                                          <td><input type="text" value="250" data-allowance="emp-allownace" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance (Reg. OT Hrs.)</td>
+                                          <td><input type="text" value="100" data-allowance="emp-allownace" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Allowance (Special Holiday/Restday Hrs.) </td>
+                                          <td><input type="text" value="" data-allowance="emp-allownace" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Allowance (Special H/Day-Off OT Hrs) </td>
+                                          <td><input type="text" value="250" data-allowance="emp-allownace" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr class="text-right">
+                                          <td> Total Allowance </td>
+                                          <td><input type="text" value="" data-allowance="total-emp-allownace" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <div class="emp-py">
+                                  <strong>Pays</strong>
+                                  <table class="table emp-vals">
+                                      <tbody>
+                                        <tr>
+                                          <td>Total Regular Pay</td>
+                                          <td><input type="text" value="" data-pay="reg-pay" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Reg OT/Pay Hr(25%) </td>
+                                          <td><input type="text" value="" data-pay="reg-pay-ot" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>   Total Reg OT PAY  </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>    Special H/Day-Off Pay/Hr (30%)  </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off OT Pay/Hr .Reg Hourly Rate x(30%)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off Pay/Hr (on Reg. Holiday)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off OTPay/Hr (on Reg. Holiday)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day off pay</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off OT Pay </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off Pay/Hr (on Reg. Holiday)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off OTPay/Hr (on Reg. Holiday)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Holiday </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Holiday (Double Pay) OT/Hr( Hourly rate x30%)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Holiday OT Pay </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> ND per hr(10%) </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> ND per hr during OT(10%) </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> /ND pay   </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance Reg. Hrs(P34)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance Reg. OT Hrs.)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance on Special Holiday/Restday Hrs.)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance on Special Holiday/Restday  OT Hrs.)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-right"> Total </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+
+
+                              <div class="period">
+                                <strong>Period</strong>
+                                    <select id="period" name="period" class="form-control">
+                                        <option value="semi-monthly" selected>Semi-Monthly</option>
+                                        <option value="monthly" selected="selected">Monthly</option>
+                                    </select>
+                              </div>
+                              <div class="basic-salary">
+                                    <strong>Basic Salary</strong>
+                                    <input value="16560" type="text" id="salary-control" class="form-control"/>
+                              </div>
+                              <div class="base-salary">
+                                    <strong>Base Salary</strong>
+                                    <input type="text" id="base-salary" class="form-control"/>
+                              </div>
+                              <div class="status">
+                                    <strong>Status</strong>
+                                    <select id="status" name="status" class="form-control" required="">
+                                      <option value="" selected="selected"></option>
+                                      <option value="S" selected>Single</option>
+                                      <option value="ME">Married</option>
+                                      <option value="S1">Single w/ 1 Dependent</option>
+                                      <option value="S2">Single w/ 2 Dependent</option>
+                                      <option value="S3">Single w/ 3 Dependent</option>
+                                      <option value="S4">Single w/ 4 Dependent</option>
+                                      <option value="ME1">Married w/ 1 Dependent</option>
+                                      <option value="ME2">Married w/ 2 Dependent</option>
+                                      <option value="ME3">Married w/ 3 Dependent</option>
+                                      <option value="ME4">Married w/ 4 Dependent</option>
+                                    </select>
+                              </div>
+                            </div>
+                            <div class="inner-deduc col-sm-6 float-left">
+                                <div class="monthly-premium">
+                                    <strong>Monthly Premuim</strong>
+                                    <input type="text" disabled id="monthly-prem" class="form-control"/>
+                                </div>
+                                <div class="employee-share">
+                                    <strong>Employee Share</strong>
+                                    <input type="text" disabled id="emp-shr" class="form-control"/>
+                                </div>
+                                <div class="employeer-share">
+                                    <strong>Employeer Share</strong>
+                                    <input type="text" disabled id="empr-shr" class="form-control"/>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                          </div>
+                        </div>
+                      <!-- </div> -->
+                  <!-- </div> -->
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="buzz">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#payroll" role="tab" data-toggle="tab">Payroll</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#emp-details" role="tab" data-toggle="tab">Detail View</a>
+                      </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade in active" id="payroll">...</div>
+                      <div role="tabpanel" class="tab-pane fade" id="emp-details">bbb</div>
+                    </div>
+
+
+
+                    <div class="card">
+                          <div class="card-header">
+                            John Doe
+                          </div>
+                          <div class="card-block emp-py-rl">
+                            <div class="inner-details col-sm-12 float-left">
+                              <div class="emp-details">
+                                  <div class="col-sm-6 float-sm-left">
+                                      <strong>Name</strong>
+                                      <input type="text" value="John Doe" class="form-control">
+                                  </div>
+                                  <div class="col-sm-6 float-sm-left">
+                                      <strong>Level</strong>
+                                      <input tyle="text" value="A" class="form-control">
+                                  </div> 
+                              </div>
+                              <br/>
+                              <div class="rates">
+                                  <strong>Rates</strong>
+                                  <table class="table emp-vals">
+                                      <tbody>
+                                          <tr>
+                                            <td>Daily</td>
+                                            <td><input type="text" value="450" data-drt="d-rt" disabled class="form-control float-sm-right"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>Hourly</td>
+                                            <td><input type="text" value="" data-hrt="h-rt" disabled class="form-control float-sm-right"></td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </drt
+                              <div class="emp-hrs">
+                                  <strong>Working Hours</strong>
+                                  <table class="table emp-vals">
+                                      <tbody>
+                                        <tr>
+                                          <td>Reg. Hrs</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Reg OT Hrs</td>
+                                          <td><input type="text" value="" id="rg-ot-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Special Holiday/Day off Hrs </td>
+                                          <td><input type="text" value="" id="" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Special H/Day-Off OT Hrs </td>
+                                          <td><input type="text" value="" id="" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>   Special H/Day-Off Pay/Hr (on Reg. Holiday) </td>
+                                          <td><input type="text" value="" id="" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>   Special H/Day-Off OTPay/Hr (on Reg. Holiday) </td>
+                                          <td><input type="text" value="" id="" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Hol. </td>
+                                          <td><input type="text" value="" id="" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  H/ OT Hrs </td>
+                                          <td><input type="text" value="" id="" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Night Differential </td>
+                                          <td><input type="text" value="" id="" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-right">  Overall Total hours </td>
+                                          <td><input type="text" value="" id="" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <div class="emp-allwnc">
+                                  <strong>Allowance</strong>
+                                  <table class="table emp-vals">
+                                      <tbody>
+                                        <tr>
+                                          <td>Allowance (Reg Hrs.)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance (Reg. OT Hrs.)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Allowance (Special Holiday/Restday Hrs.) </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Allowance (Special H/Day-Off OT Hrs) </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-right"> Total Allowance </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                              <div class="emp-py">
+                                  <strong>Pays</strong>
+                                  <table class="table emp-vals">
+                                      <tbody>
+                                        <tr>
+                                          <td>Regular Pay</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Reg OT/Pay Hr(25%) </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>   Total Reg OT PAY  </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>    Special H/Day-Off Pay/Hr (30%)  </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off OT Pay/Hr .Reg Hourly Rate x(30%)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off Pay/Hr (on Reg. Holiday)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off OTPay/Hr (on Reg. Holiday)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day off pay</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off OT Pay </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off Pay/Hr (on Reg. Holiday)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Special H/Day-Off OTPay/Hr (on Reg. Holiday)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> Holiday </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Holiday (Double Pay) OT/Hr( Hourly rate x30%)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>  Holiday OT Pay </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> ND per hr(10%) </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> ND per hr during OT(10%) </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td> /ND pay   </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance Reg. Hrs(P34)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance Reg. OT Hrs.)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance on Special Holiday/Restday Hrs.)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Allowance on Special Holiday/Restday  OT Hrs.)</td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="text-right"> Total </td>
+                                          <td><input type="text" value="" id="rg-hrs" disabled class="form-control float-sm-right"></td>
+                                        </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+
+
+
+                              <div class="period">
+                                <strong>Period</strong>
+                                    <select id="period" name="period" class="form-control">
+                                        <option value="semi-monthly" selected>Semi-Monthly</option>
+                                        <option value="monthly" selected="selected">Monthly</option>
+                                    </select>
+                              </div>
+                              <div class="basic-salary">
+                                    <strong>Basic Salary</strong>
+                                    <input value="16560" type="text" id="salary-control" class="form-control"/>
+                              </div>
+                              <div class="base-salary">
+                                    <strong>Base Salary</strong>
+                                    <input type="text" id="base-salary" class="form-control"/>
+                              </div>
+                              <div class="status">
+                                    <strong>Status</strong>
+                                    <select id="status" name="status" class="form-control" required="">
+                                      <option value="" selected="selected"></option>
+                                      <option value="S" selected>Single</option>
+                                      <option value="ME">Married</option>
+                                      <option value="S1">Single w/ 1 Dependent</option>
+                                      <option value="S2">Single w/ 2 Dependent</option>
+                                      <option value="S3">Single w/ 3 Dependent</option>
+                                      <option value="S4">Single w/ 4 Dependent</option>
+                                      <option value="ME1">Married w/ 1 Dependent</option>
+                                      <option value="ME2">Married w/ 2 Dependent</option>
+                                      <option value="ME3">Married w/ 3 Dependent</option>
+                                      <option value="ME4">Married w/ 4 Dependent</option>
+                                    </select>
+                              </div>
+                            </div>
+                            <div class="inner-deduc col-sm-6 float-left">
+                                <div class="monthly-premium">
+                                    <strong>Monthly Premuim</strong>
+                                    <input type="text" disabled id="monthly-prem" class="form-control"/>
+                                </div>
+                                <div class="employee-share">
+                                    <strong>Employee Share</strong>
+                                    <input type="text" disabled id="emp-shr" class="form-control"/>
+                                </div>
+                                <div class="employeer-share">
+                                    <strong>Employeer Share</strong>
+                                    <input type="text" disabled id="empr-shr" class="form-control"/>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="card-footer">
+                          </div>
+                        </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
+              </div>
+              <!-- /tabs -->
+              
+            </div>   
+          </div><!-- /row -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+      
+
+    </div> -->
+  </body>
+</html>
+<script type="text/javascript">
+$(function(){
+    
+    var get_daily_rate = $('input[data-drt="d-rt"]');
+    var get_hourly_rate = $('input[data-hrt="h-rt"]');
+    var get_ttl_reg_hours = $('input[data-hour="working-total-hours"]');
+
+
+    function daily_to_hourly(){
+        $('.emp-py-rl').each(function() {
+            var d_rt = $(this).find(get_daily_rate).val();
+            var h_rt = d_rt / '8';
+            $(this).find(get_hourly_rate).val(h_rt.toFixed(2));
+            console.log(h_rt);
+
+            // compute regular OT pay / hr 25%
+            var reg_ot_pay = 0;
+            var reg_ot_pay = h_rt * '0.25' + h_rt;
+            $('input[data-pay="reg-pay-ot"]').val(reg_ot_pay.toFixed(2))
+            //alert(ttl_reg_ot_pay);
+
+            // compute regular pay
+            var ttl_reg_pay = 0;
+            var ttl_reg_pay = h_rt * get_ttl_reg_hours.val();
+            console.log(ttl_reg_pay);
+            //alert(ttl_reg_pay);
+            $('input[data-pay="reg-pay"]').val(ttl_reg_pay.toFixed(2));
+            return false;
+
+            
+        });
+        //return true;
+    }
+    daily_to_hourly();
+    //alert(get_hourly_rate);
+
+
+    function working_hours(){
+        var sum_ttl_hrs = 0;
+        $('input[data-working-hours="work-hrs"]').each(function(){
+            var wrk_hrs = $(this).val();
+            sum_ttl_hrs += +wrk_hrs;  
+        }); 
+        $('input[data-working-hours="total-work-hrs"]').val(sum_ttl_hrs);
+        //alert(sum_ttl_hrs);     
+    }
+    working_hours();
+
+    function employee_allowance(){
+        var sum_ttl_allwnc = 0;
+        $('input[data-allowance="emp-allownace"]').each(function(){
+            var allwnc_emp = $(this).val();
+            sum_ttl_allwnc += +allwnc_emp;
+        });
+        $('input[data-allowance="total-emp-allownace"]').val(sum_ttl_allwnc);
+    }
+    employee_allowance();
+
+    // function regular_pay(){
+    //     var reg_pay = 0;
+    //     var ret_val = daily_to_hourly();
+    //     ttl_reg_pay = ret_val * get_ttl_reg_hours;
+    //     $('input[data-pay="reg-pay"]').val(ttl_reg_pay);
+
+    //     //alert(ret_val);
+    // }
+    //regular_pay();
+
+    // console.log(daily_to_hourly);
+    // daily_to_hourly(regular_pay);
+    //alert(daily_to_hourly);
+    
+    
+
+
+    
+});
+
+</script>
