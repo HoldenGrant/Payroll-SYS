@@ -42,6 +42,13 @@
 .tab-pane{
   background: #fff;
 }
+
+.manual-input {
+    background: rgb(249, 203, 120) !important;
+}
+.computed-input {
+    background: #b2f9a9 !important;
+}
 /*.tabs-right > .nav-tabs,
 .tabs-left > .nav-tabs {
   border-bottom: 0;
